@@ -7,9 +7,9 @@ jobs:
             - name: Get code
               uses: actions/checkout@v6
             - name: Install dependencies
-              uses: npm ci
+              run: npm ci
             - name: Build website
-              uses: npm run build
+              run: npm run build
             - name: Upload artifacts
               uses: actions/upload-artifact@v6
               with:
